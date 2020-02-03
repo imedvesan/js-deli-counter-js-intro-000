@@ -18,7 +18,7 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty.";
   } else {
     var line = "The line is currently:";
-    katzDeliLine.forEach(function(val,index)) {
+    katzDeliLine.forEach(function(val,index) {
       line += `${index+1}. ${katzDeliLine[index]}`
       if (index < katzDeliLine.length - 1){line += ',';}
     });
